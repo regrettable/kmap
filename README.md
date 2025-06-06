@@ -40,8 +40,8 @@ Navigate around search result via `F4` and `F5`
 (I've never written down these when I was making kmap originally, sorry if I missed something!)
 
 - Frequency list: http://corpus.leeds.ac.uk/list.html
-- JMdict: https://www.edrdg.org/jmdict/j\_jmdict.html
+- JMdict: https://www.edrdg.org/jmdict/j_jmdict.html
 - Jyouou stroke edit distance info for finding similar kanji: (forgot where the link came from)
-- Kanjidic: https://www.edrdg.org/wiki/index.php/KANJIDIC\_Project
+- Kanjidic: https://www.edrdg.org/wiki/index.php/KANJIDIC_Project
 - Kradfile and radkfile: https://www.edrdg.org/krad/kradinf.html
 - stb\_truetype.h: https://github.com/nothings/stb
