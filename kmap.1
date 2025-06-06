@@ -1,0 +1,99 @@
+.TH KMAP 1 CURRENT_DATE
+
+.SH NAME 
+kmap \- kanji map
+
+.SH SYNOPSIS
+.B kmap
+.RB [ \-f
+.IR font_path ]
+.RB [ \-d
+.RB [ \-s
+.IR samples ]
+.RB [ \-t
+.IR theme ]
+
+.P
+.BR kmap_converter
+.RB -j
+.IR jmdict_path
+.RB -k
+.IR kanjidic_path
+.RB -o
+.IR output_file
+
+.SH DESCRIPTION
+.B kmap
+is an interactive map that shows common chinese characters shared 
+between multiple words.
+.P
+.B kmap_converter
+is a tool that converts (uncompressed) dictionaries into
+database used by
+.IR kmap (1)
+
+.SH OPTIONS
+.TP
+.BI \-f " font_path"
+use a different font file (only TrueType fonts are supported)
+.TP
+.TP
+.BI \-s " samples"
+set the amount of samples per pixel (affects picture quality
+and performance)
+.TP
+.BI \-t " [ light | dark ]"
+choose the default theme (either light or dark)
+
+.SH USAGE
+.P
+kmap is navigated by using a combination of keyboard and a mouse.
+It helps to also have an input method installed, since kmap
+can't convert into chinese characters by itself.
+.TP
+.B Left click
+Move the map around
+.TP
+.B Right click
+Select a character
+.TP
+.B Left click + Right click
+Center the camera around a character
+.TP
+.B Scroll wheel up/down
+Zoom the map in/out respectively
+.TP
+.B Tab
+Select next word with a given character
+.TP
+.B Shift-Tab
+Select previous word with a given character
+.TP
+.B 
+.TP
+.B \- (Minus key)
+Zoom out
+.TP
+.B + (Plus key)
+Zoom in
+.TP
+.B = (Equals key)
+Reset zoom
+.TP 
+.B t
+Change the interface theme
+.TP
+.B k
+Toggle the kanji information overlay
+.TP
+.B p
+Paste the contents of clipboard
+
+.SH BUGS
+.IR kmap
+requires OpenGL version OPENGL_MAJOR_RELEASE.OPENGL_MINOR_RELEASE. If you get errors like GLXBadFBConfig, try setting the environment variables MESA_GL_VERSION_OVERRIDE and MESA_GLSL_VERSION_OVERRIDE to OPENGL_MAJOR_RELEASE.OPENGL_MINOR_RELEASE and OPENGL_MAJOR_RELEASEOPENGL_MINOR_RELEASE0 respectively.
+
+.SH FILES
+.TP
+.I DATABASE_DIR
+kmap database

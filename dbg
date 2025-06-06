@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd build
+gdb -ex 'set confirm off' -ex 'start' -ex 'c' --args $@
